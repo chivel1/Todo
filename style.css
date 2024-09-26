@@ -1,0 +1,161 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #6400e7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+#container{
+    background-color: rgb(255, 255, 255);
+    width: 45vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-top: 1rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:25vh;
+    margin: 0 auto;
+    overflow:hidden;
+    
+}
+#inputConntainer{
+    display: flex;
+    gap: 10px;
+    padding: 5px;
+}
+#inputField{
+    padding: 10px 45px;
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    text-align: center;
+}
+#inputField:focus{
+    background-color: #eeeeee;
+    outline: 3px solid rgb(175, 173, 173);
+}
+#inputConntainer > #addTodo{
+    border: none;
+    outline: none;
+    color: #6400e7;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    padding: 3px 8px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+}
+.todos{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    padding: 5px 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow: scroll;
+}
+.paragraph{
+    font-size: 1rem;
+    color: rgb(155, 8, 8);
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+    position: relative;
+}
+.paragraph:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    
+}
+.todoButton > * {
+    border: none;
+    padding: 5px 10px;
+    color: white !important;
+    border-radius: 3px;
+}
+.fa-trash:before,.fa-check:before {
+    color: white !important;
+}
+
+#checkbox{
+    width: 20px;
+    /* background-color: blue; */
+    appearance: none;
+    outline: 2px solid rgba(5, 185, 230, 0.411);
+    margin: 5px ;
+    height: 4vh;
+    background-color: #6400e7;
+    width: 35px;
+    border-radius: 100px;
+}
+#checkbox:checked{
+    background-color: white;
+}
+.todoText{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+#button{
+    padding: 30px;
+    color: red;
+}
+.filterButtom{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 5px 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+button{
+    color: #6400e7;
+    background-color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;  
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.filterButtom > #pending, #todoCompleted, #all{
+    outline: none;
+}
+#pending:hover, #todoCompleted:hover, #all:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+/* .checkbox-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 2px solid #000;
+} */
