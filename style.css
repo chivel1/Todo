@@ -9,7 +9,7 @@ body{
 }
 #container{
     background-color: rgb(255, 255, 255);
-    width: 45vw;
+    width: 75vw;
     height: 50vh;
     display: flex;
     flex-direction: column;
@@ -72,8 +72,8 @@ body{
 }
 .paragraph{
     font-size: 1rem;
-    color: rgb(155, 8, 8);
-    background-color: white;
+    color: rgb(0, 0, 0);
+    background-color: rgb(243, 241, 241);
     cursor: pointer;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     display: flex;
@@ -89,16 +89,32 @@ body{
     color: rgb(0, 0, 0);
     
 }
+.filterButtom{
+    display: none;
+}
 .todoButton > * {
     border: none;
     padding: 5px 10px;
     color: white !important;
     border-radius: 3px;
 }
-.fa-trash:before,.fa-check:before {
+.fa-trash:before,.fa-regular:before,.fa-check:before   {
     color: white !important;
 }
-
+.strikethrough{
+    text-decoration: line-through;
+}
+#editbutton{
+    color: white;
+}
+.activeBtn{
+    background-color: #6400e7;
+    color: white;
+}
+.active{
+    background-color: #E9EFEC;
+    color: #E9EFEC;
+}
 #checkbox{
     width: 20px;
     /* background-color: blue; */
@@ -118,11 +134,11 @@ body{
     align-items: center;
     font-weight: 600;
 }
-
+/* 
 #button{
     padding: 30px;
     color: red;
-}
+} */
 .filterButtom{
     display: flex;
     justify-content: space-around;
