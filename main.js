@@ -138,3 +138,15 @@ for (let i = 0; i < btns.length; i++) {
         this.className += " activeBtn";
     });
 }
+let hamburger = document.querySelector(".fa-ellipsis-vertical")
+hamburger.addEventListener("click", ()=>{
+    let filterButton = document.getElementById("filterButtom");
+    filterButton.style.display = "block";
+    
+    let buttons = filterButton.children;
+    for (let i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener("click", ()=>{
+            filterButton.style.display ="none";
+        });
+    }
+})

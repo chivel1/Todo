@@ -10,14 +10,19 @@
 <body>
     <div id="container">
         <div id="inputConntainer" >
+            <div class="inputSection">
             <input type="text" id="inputField" placeholder=" Add Appointment">
             <button id="addTodo">Add</button>
-            <div id="filterButtom">
-                <button id="all" class="btn activeBtn">All Todo</button>
-                 <button id="pending" class="btn">Pending Todo</button>
-                 <button id="completed" class="btn">Todo Completed</button>
-             </div>
+            </div>
+            <div>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
         </div>
+        <div id="filterButtom">
+            <button id="all" class="btn activeBtn">All Todo</button>
+             <button id="pending" class="btn">Pending Todo</button>
+             <button id="completed" class="btn">Todo Completed</button>
+         </div>
        <div class="todos" id="todoContainer">
        </div>
     </div>
